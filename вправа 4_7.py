@@ -1,0 +1,21 @@
+from tkinter import* 
+
+root = Tk()
+root.geometry("400x500")
+choice1 = BooleanVar()
+flag1 = Checkbutton(text = 'Предметні гуртки'. variable - choice1)
+choice2 = BooleanVar()
+flag1.pack(pady = 10)
+flag2 = Checkbutton(text = 'Спортивні секції', variable = choice2)
+flag2.pack(pady = 10)
+choice3 = BooleanVar()
+flag3 = Checkbutton(text = 'Театральна студія', variable = choice3)
+flag3.pack(pady = 10)
+
+button - Button(text - 'Обчислити', command - click)
+button.pack(pady = 10)
+lab1 = Label(text = 'Сумарний рейтинг')
+lab1.pack(pady = 10)
+lab2 - Label()
+lab2.pack(pady = 10)
+root.mainloop()
