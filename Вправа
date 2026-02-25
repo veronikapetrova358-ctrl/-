@@ -1,0 +1,24 @@
+from tkinter import*
+w=Tk
+w.geometry('300x200')
+
+def cl():
+    n=int(ent1.get())
+    s=0
+    for i in range (n):
+        s=s+(i+1)**2
+    ent2.delete(0,END)
+    ent2.insert(0,str(s))
+
+lb1=Label (text = 'Уведіть значення n')
+lb1.pack()
+ent1=Entry()
+ent1.pack()
+
+bt=Button(text="Обчислити", command=c)
+bt.pack(pady = 10)
+
+lb2=Label(text = 'Кількіст кульок')
+lb2.pack()
+ent2=Entry()
+ent2.pack(pady = 10)
